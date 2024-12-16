@@ -1,0 +1,26 @@
+{% extends "partials/base.html" %}
+{% block content %} 
+<table class="table"  style='margin:0 200px 0 200px;font-size:25px'>
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody >
+  
+    {% for data in data  %}
+    <tr >
+
+      <td>{{data.f_name}}</td>
+      <td>{{data.l_name}}</td>
+      <td>{{data.age}}</td>
+    </tr>
+    {% endfor %}
+
+  
+   
+  </tbody>
+</table>
+{% endblock %}
